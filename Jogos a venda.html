@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styleaba.css">
+
+
+
+    <title>Jogos para Video games e computadores </title>
+    
+
+   
+<body id="body">
+    <div class="header" id="header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+           
+        </button>
+        <div class="logo_header">
+
+            <h2 style="color: blue;">DEEP STEAM </h2>
+    
+    
+           
+        </div>
+        
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                           </button>
+                           <a href="index.html" >Jogos na promoção</a>
+                           <a href="Jogos a venda.html">Jogos</a>
+                           <a href="videos.html">videos de jogos </a>
+                           <a href="breve.html">Jogos em breve...</a>
+        </div>
+    </div>
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+<BR></BR>
+<head>
+    <style>
+        /* Estilos para o carrossel */
+        .carousel-container {
+          width: 400px;
+          margin: 0 auto;
+          overflow: hidden;
+        }
+    
+        .carousel {
+          display: flex;
+          transition: transform 0.3s ease-in-out;
+        }
+    
+        .carousel img {
+          width: 100%;
+        }
+      </style>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+     
+        <a href="https://www.leagueoflegends.com/pt-br/"><img src="https://cdn.discordapp.com/attachments/695331884774850642/1134486886853902448/d7e53e6e2484ab4874a400cdd6ec1e72.jpg" alt=""></a>
+       <a href="https://genshin.hoyoverse.com/pt"><img src="https://cdn.discordapp.com/attachments/695331884774850642/1134488857988051116/b70b84d6e2a9eb3e013ebb08eb6cb60a.jpg" alt=""></a>
+        <a href="https://www.riotgames.com/pt-br"><img src="https://cdn.discordapp.com/attachments/695331884774850642/1134488823817052210/39dd4da08ecccc0159d79598365e995e.jpg" alt=""></a>
+       <a href="https://store.steampowered.com/app/1971870/Mortal_Kombat_1/"> <img src="https://cdn.discordapp.com/attachments/695331884774850642/1134488865114161244/24f74c600fbd83cb79db042e61bea279.jpg" alt=""></a>
+        <a href="https://www.playstation.com/pt-br/games/god-of-war-ragnarok/"><img src="https://cdn.discordapp.com/attachments/695331884774850642/1134489430145650779/97e37eb18dea0f808a741538e79a5aee.jpg" alt=""></a>
+        <a href="https://store.playstation.com/pt-br/concept/230079"><img src="https://cdn.discordapp.com/attachments/695331884774850642/1134489558466175057/622cd7673afb853f034ceaadd690c8b1.jpg" alt=""></a>
+        <a href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/"><img src="https://cdn.discordapp.com/attachments/695331884774850642/1134489994870935662/61bf735782a9298796178aa7d3e8249b.jpg" alt=""></a>
+        <a href="https://store.steampowered.com/agecheck/app/2050650/"><img src="https://cdn.discordapp.com/attachments/695331884774850642/1134490422929006753/2dd7bb0533e2b9c363160a38d9527039.jpg" alt=""></a>
+         <a href="https://store.steampowered.com/agecheck/app/381210/"><img src="https://th.bing.com/th/id/OIP.i26RiYRRXqgRsUohzC83qAHaDt?pid=ImgDet&rs=1" alt=""></a>
+      <div class="carousel-container">
+        <div class="carousel">
+          <!-- Adicione mais imagens aqui -->
+        </div>
+      </div>
+     
+      <script>
+       
+        const carousel = document.querySelector('.carousel');
+        let translateXValue = 0;
+    
+        function nextSlide() {
+          const imageWidth = carousel.querySelector('img').clientWidth;
+          const numImages = carousel.children.length;
+    
+          translateXValue -= imageWidth;
+    
+          if (Math.abs(translateXValue) >= imageWidth * (numImages - 1)) {
+            translateXValue = 0;
+          }
+    
+          carousel.style.transform = `translateX(${translateXValue}px)`;
+        }
+    
+        // Intervalo de tempo para trocar de slide (3 segundos neste exemplo)
+        setInterval(nextSlide, 3000);
+      </script>
+
+
+
+
+
+     
+</body>
+
+
+
+<footer>
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+</html>

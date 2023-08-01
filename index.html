@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styleaba.css">
+
+
+
+
+    <title>Jogos para Video games e computadores </title>
+    
+
+   
+<body id="body">
+
+  <div class="header" id="header">
+    <button onclick="toggleSidebar()" class="btn_icon_header">
+       
+    </button>
+    <div class="logo_header">
+
+        <h2 style="color: blue;">DEEP STEAM </h2>
+
+
+       
+    </div>
+           
+        
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                           </button>
+                           <a href="index.html" >Jogos na promoção</a>
+                           <a href="Jogos a venda.html">Jogos</a>
+                           <a href="videos.html">videos de jogos </a>
+                           <a href="breve.html">Jogos em breve...</a>
+        </div>
+    </div>
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+     
+        
+        <head>
+      
+        <style>
+          /* Estilos para o carrossel */
+          .carousel-container {
+            width: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+          }
+      
+          .carousel {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+          }
+      
+          .carousel img {
+            width: 100%;
+          }
+        </style>
+      </head>
+      <link rel="stylesheet" href="style.css">
+      <body>
+       
+      
+        <div class="carousel-container">
+          <div class="carousel">
+            <!-- Adicione mais imagens aqui -->
+          </div>
+        </div>
+      
+        <script>
+         
+          const carousel = document.querySelector('.carousel');
+          let translateXValue = 0;
+      
+          function nextSlide() {
+            const imageWidth = carousel.querySelector('img').clientWidth;
+            const numImages = carousel.children.length;
+      
+            translateXValue -= imageWidth;
+      
+            if (Math.abs(translateXValue) >= imageWidth * (numImages - 1)) {
+              translateXValue = 0;
+            }
+      
+            carousel.style.transform = `translateX(${translateXValue}px)`;
+          }
+      
+          // Intervalo de tempo para trocar de slide (3 segundos neste exemplo)
+          setInterval(nextSlide, 3000);
+        </script>
+
+
+
+
+
+
+
+       
+</body>
+
+
+
+<footer>
+
+
+
+
+
+
+
+
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+</html>

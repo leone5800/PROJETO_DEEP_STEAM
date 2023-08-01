@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styleaba.css">
+
+
+    
+
+  
+    
+    
+    
+</head>
+<body id="body">
+  <div class="header" id="header">
+    <button onclick="toggleSidebar()" class="btn_icon_header">
+       
+    </button>
+    <div class="logo_header">
+
+        <h2 style="color: blue;">DEEP STEAM </h2>
+
+
+       
+    </div>
+        
+        <div class="navigation_header" id="navigation_header">
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                           </button>
+                           <a href="index.html" >Jogos na promoção</a>
+                           <a href="Jogos a venda.html">Jogos</a>
+                           <a href="videos.html">videos de jogos </a>
+                           <a href="breve.html">Jogos em breve...</a>
+        </div>
+    </div>
+    <div tabindex="0" class="content" onfocus="closeSidebar()" id="content">
+        <h1></h1>
+        <style>
+            /* Estilos para o carrossel */
+            .carousel-container {
+              width: 775px;
+              margin: 1rem;
+              
+            }
+        
+            .carousel {
+              display: flex;
+              transition: transform 0.3s ease-in-out;
+            }
+        
+            .carousel img {
+              width: 100%;
+            }
+          </style>
+        </head>
+        <link rel="stylesheet" href="style.css">
+        <body>
+          <h1>Jogos em breve</h1>
+        
+          <div class="carousel-container">
+            <div class="carousel">
+              <img id="teste" src="https://cdn.discordapp.com/attachments/1108743298165788672/1135884155712970752/R.jpg" alt="">
+              <img id="teste" src="https://cdn.discordapp.com/attachments/1108743298165788672/1135884254354612274/Assassins-Creed-Mirage.webp" alt="">
+              <img id="teste" src="https://cdn.discordapp.com/attachments/1108743298165788672/1135884010971742208/R_2.jpg" alt="">
+              <img id="teste" src="https://cdn.discordapp.com/attachments/1108743298165788672/1135884043544690760/Alan_Wake_2_Gameplay_Reveal_Trailer_Feature.webp" alt="">
+              <img id="teste" src="https://cdn.discordapp.com/attachments/1108743298165788672/1135884082484609145/OIP.jpg" alt="">
+              <img id="teste" src="https://cdn.discordapp.com/attachments/1108743298165788672/1135884187300270201/R_1.jpg" alt="">
+              <img id="teste" src="https://cdn.discordapp.com/attachments/1108743298165788672/1135884464346628216/OIP_1.jpg" alt="">
+              
+              <!-- Adicione mais imagens aqui -->
+            </div>
+          
+        
+          <script>
+           
+            const carousel = document.querySelector('.carousel');
+            let translateXValue = 0;
+        
+            function nextSlide() {
+              const imageWidth = carousel.querySelector('img').clientWidth;
+              const numImages = carousel.children.length;
+        
+              translateXValue -= imageWidth;
+        
+              if (Math.abs(translateXValue) >= imageWidth * (numImages - 1)) {
+                translateXValue = 0;
+              }
+        
+              carousel.style.transform = `translateX(${translateXValue}px)`;
+            }
+        
+            // Intervalo de tempo para trocar de slide (3 segundos neste exemplo)
+            setInterval(nextSlide, 3000);
+          </script>
+        </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+
+
+
+
+
+
+    </div>
